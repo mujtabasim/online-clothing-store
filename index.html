@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+    <h1>SAM</h1>
+    <nav>
+      <a href="index.html" class="nav">HOME</a>
+      <a href="men.html" class="nav">MEN</a>
+      <a href="women.html" class="nav">WOMEN</a>
+      <a href="contact.html" class="nav" target="_blank">CONTACT</a>
+      <a href="help.html" class="nav" target="_blank">HELP</a>
+    </nav>
+    <div class="cart">
+  <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+</div>
+  </header>
+  <div class="img-box">
+    <img src="images/home.png" alt="">
+    <div class="text">
+        <h1>ELEVATE YOUR GAME.</h1>
+        <p>Sustainable Performance Wear Engineered For the Modern gear.</p>
+        <button onclick="scrollToSection()" id="btn" id="target"><b>Shop Collection</b></button>
+        <section id="target"></section>
+    </div>
+  </div>
+
+  <div class="head">
+    <h1>New Arrivals</h1>
+    <p>Swipe to explore our latest gear</p>
+  </div>
+
+  <main>
+    <div class="item">
+    <img src="images/item1.jfif" alt="">
+    <h3>Women Pants</h3>
+    <h2>$37.00</h2>
+    <button type="button" onclick="addToCart('Women Pants', 37)">Add to cart</button>
+    </div>
+    <div class="item">
+    <img src="images/item2.jfif" alt="">
+    <h3>Men Pants</h3>
+    <h2>$35.00</h2>
+    <button type="button" onclick="addToCart('Men Pants', 35)">Add to cart</button>
+    </div>
+    <div class="item">
+    <img src="images/item3.jfif" alt="">
+    <h3>Men T-shirts</h3>
+    <h2>$40.00</h2>
+    <button type="button" onclick="addToCart('Men T-shirts', 40)">Add to cart</button>
+    </div>
+    <div class="item">
+    <img src="images/item4.jfif" alt="">
+    <h3>Sweat shirts</h3>
+    <h2>$27.00</h2>
+    <button type="button" onclick="addToCart('Sweat shirts', 27)">Add to cart</button>
+    </div>
+    <div class="item">
+    <img src="images/item5.jfif" alt="">
+    <h3>Jackets</h3>
+    <h2>$53.00</h2>
+    <button type="button" onclick="addToCart('Jackets', 53)">Add to cart</button>
+    </div>
+    <div class="item">
+    <img src="images/item6.jpg" alt="">
+    <h3>Women Shirts</h3>
+    <h2>$45.00</h2>
+    <button type="button" onclick="addToCart('Women Shirts', 45)">Add to cart</button>
+    </div>
+    <div class="item">
+    <img src="images/item7.jfif" alt="">
+    <h3>Shoes</h3>
+    <h2>$34.00</h2>
+    <button type="button" onclick="addToCart('Shoes', 34)">Add to cart</button>
+    </div>
+    <div class="item">
+    <img src="images/item8.jfif" alt="">
+    <h3>Trousers</h3>
+    <h2>$38.00</h2>
+    <button type="button" onclick="addToCart('Trousers', 38)">Add to cart</button>
+    </div>
+    <div class="item">
+    <img src="images/item9.jfif" alt="">
+    <h3>Hoodies</h3>
+    <h2>$65.00</h2>
+    <button type="button" onclick="addToCart('Hoodies', 65)">Add to cart</button>
+    </div>
+ 
+  </main>
+
+
+  <footer>
+      <div class="end">
+  <div class="foot">
+  <h2>SAM</h2>
+  <p>Premium clothes in accordance with new fashion</p>
+
+  <form id="newsletterForm">
+    <input type="email" id="email" placeholder="email for newsletter">
+    <span class="error" id="emailerror"></span>
+    <button type="submit">Go</button>
+  </form>
+</div>
+    <div class="foot">
+    <h2>Customer Care</h2>
+   
+    <ul><a class="foota" href="main.html">Order Tracking</a></ul>
+    <ul><a class="foota" href="main.html">Shipping & Returns</a></ul>
+    <ul><a class="foota" href="main.html">FAQ</a></ul>
+  
+  </div>
+  <div class="foot">
+    <h2>Connect</h2>
+    
+    <ul><a class="foota" href="instagram.com">Instagram</a></ul>
+    <ul><a class="foota" href="#">facebook</a></ul>
+    <ul><a class="foota" href="#">Tik Tok</a></ul>
+  </div>
+  </div>
+  <hr>
+  <p id="end">© 2025 SAM Inc. All rights reserved.</p>
+</footer>
+
+<script src="cart.js"></script>
+
+<script>
+
+function scrollToSection() {
+  document.getElementById("target").scrollIntoView({ behavior: "smooth" });
+}
+
+const form = document.getElementById('newsletterForm');
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  document.getElementById('emailerror').innerText = '';
+  
+  const email = document.getElementById('email').value.trim();
+
+  if (email === '') {
+    document.getElementById('emailerror').innerText = 'Please enter a valid email';
+  } else {
+    alert('Subscribed successfully!');
+    form.reset();
+  }
+});
+</script>
+</body>
+</html>

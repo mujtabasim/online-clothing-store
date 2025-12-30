@@ -1,0 +1,167 @@
+*{    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+background-color: #f0f8ff;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+}
+header{
+ background-color: rgb(124, 145, 170);
+ display: flex;
+ padding: 20px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ color: beige;
+z-index: 1000;
+}
+header h1{
+    font-size: 50px;
+}
+nav{
+    margin-left: 110vh;
+    margin-top: 20px;
+}
+.nav{
+   padding: 5px;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600; 
+   font-size: 16px;
+   color: beige;
+}
+.nav:hover{
+    color: rgb(0, 0, 0);
+}
+.cart{
+ font-weight: bold;
+  cursor: pointer;
+  background: beige;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-left: 3vh;
+  padding-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+.cart a{
+    text-decoration: none;
+    color: rgb(90, 87, 87);
+}
+.cart a:hover{
+   color: rgb(0, 0, 0); 
+}
+.cart a:active {
+  color: #45a049; 
+}
+.head{
+    margin-top: 20vh;
+    text-align: center;
+}
+.head h1{
+    font-size: 50px;
+    color: rgb(48, 46, 46);
+}
+.head p{
+    font-size: 18px;
+    margin-top: 5px;
+    color: rgb(110, 103, 103);
+}
+.row{
+    display: flex;
+    padding: 10px;
+}
+.item{
+    margin: 7vh;
+    border-radius: 12px;
+    border: rgb(197, 195, 195) solid 2px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(133, 130, 130);
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+.item img{
+  width: 247px;
+  height: 240px;
+  border-top-right-radius: 11px;
+  border-top-left-radius: 11px;
+  transition: transform 0.5s ease;
+}
+.item h3{
+ text-align: center;
+ padding: 8px;
+}
+.item h2{
+ text-align: center;
+ padding: 8px;
+}
+.item button{
+    padding: 13px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 3vh;
+    margin-left: 9vh;
+    border-radius: 25px;
+    background-color: white;
+    border: black solid 1px;
+    cursor: pointer;
+}
+.item button:hover{
+    color: white;
+    background-color: rgb(71, 65, 65); 
+}
+.item button:active {
+  background-color: #45a049; 
+}
+.item:hover{
+  box-shadow: 0 0 15px rgb(133, 130, 130);
+  transform: scale(1.05);  
+}
+.item:hover img {
+    transform: scale(1.1); 
+}
+footer{
+    background-color: rgb(29, 27, 27);
+    margin-top: 10px;
+    color: beige;
+    text-align: center; 
+}
+.foot{
+    padding-right: 15vh;
+    padding-left: 15vh;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+.foot input{
+    margin-top: 5px;
+    padding: 5px;
+}
+.foot button{
+    background-color:rgb(184, 184, 177) ;
+    border: none;
+    border-radius: 2px;
+    padding: 7px;
+}
+.foota{
+    color: beige;
+    text-decoration: none;
+    list-style: none;
+}
+.foota:hover{
+    color: rgb(67, 67, 150);
+}
+ul{
+    padding: 10px;    
+}
+.end{
+   display: flex;
+}
+#end{
+    padding: 4vh;
+}

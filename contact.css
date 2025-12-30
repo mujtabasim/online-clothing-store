@@ -1,0 +1,139 @@
+*{    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+background-color: #e9edf1;
+height: 90vh;
+margin-top: 25vh;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+}
+header{
+ background-color: rgb(119, 124, 129);
+ display: flex;
+ padding: 20px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ color: beige;
+}
+header h1{
+    font-size: 50px;
+}
+nav{
+    margin-left: 110vh;
+    margin-top: 20px;
+}
+.nav{
+   padding: 5px;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600; 
+   font-size: 16px;
+   color: beige;
+}
+.nav:hover{
+    color: rgb(0, 0, 0);
+}
+.head{
+    color: rgb(66, 65, 65);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 30px;
+}
+section{
+    display: flex;
+    padding-left: 70px;
+    padding-top: 20px;
+    color: rgb(66, 65, 65);
+    font-family: 'Montserrat', sans-serif;
+}
+.left h2{
+text-decoration: underline;
+margin-bottom: 8px;
+margin-top: 15px;
+}
+#btn{
+    background-color: rgb(44, 100, 219);
+    padding: 15px;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+#btn:hover{
+    background-color: rgb(5, 64, 151)
+}
+main{
+    display: grid;
+    margin-left: 65vh; 
+}
+.inp{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+ .flex{
+    display: flex;
+ }
+ #login{
+    background-color: rgb(255, 252, 252);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(51, 50, 50);
+    border: solid 1px rgb(68, 66, 66) ;
+    padding: 30px;
+ }
+input{
+border: solid 1px rgb(75, 73, 73) ;
+border-radius: 3px;
+padding: 10px;
+}
+#message{
+    resize: vertical;
+    height: 20vh;
+}
+
+p{
+   margin-bottom: 5px; 
+}
+
+footer{
+    background-color: rgb(29, 27, 27);
+    margin-top: 10px;
+    color: beige;
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;
+}
+.foot{
+    padding-right: 15vh;
+    padding-left: 15vh;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+.foota{
+    color: beige;
+    text-decoration: none;
+    list-style: none;
+}
+.foota:hover{
+    color: rgb(67, 67, 150);
+}
+ul{
+    padding: 10px;    
+}
+.end{
+   display: flex;
+}
+#end{
+    padding: 4vh;
+}

@@ -1,0 +1,136 @@
+*{    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+background-color: #e9edf1;
+}
+header{
+ background-color: rgb(119, 124, 129);
+ display: flex;
+ padding: 20px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ color: beige;
+z-index: 1000;
+}
+header h1{
+    font-size: 50px;
+    font-family: 'inter', sans-serif;
+}
+nav{
+    margin-left: 110vh;
+    margin-top: 20px;
+}
+.nav{
+   padding: 5px;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600; 
+   font-size: 16px;
+   color: beige;
+}
+.nav:hover{
+    color: rgb(0, 0, 0);
+}
+.cart{
+  font-weight: bold;
+  cursor: pointer;
+  background: beige;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-left: 3vh;
+  padding-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+#cart-section{
+  background: white;
+  margin: 30vh;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-top: 30vh;
+  text-align: center;
+}
+#cart-items{
+  list-style: none;
+  margin: 15px 0;
+}
+#cart-items li{
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+.cart a{
+    text-decoration: none;
+    color: rgb(90, 87, 87);
+}
+.cart a:hover{
+   color: rgb(0, 0, 0); 
+}
+.cart a:active {
+  color: #45a049; 
+}
+#order-btn{
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: large;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    background-color: white;
+    color: rgb(46, 45, 45);
+    border: black solid 2px;
+}
+#order-btn:hover{
+   color: white;
+   font-family: "Roboto", sans-serif;
+   background-color: rgb(71, 65, 65); 
+}
+#order-btn:active {
+  background-color: #45a049; 
+}
+footer{
+    background-color: rgb(29, 27, 27);
+    margin-top: 10px;
+    color: beige;
+    text-align: center; 
+}
+.foot{
+    padding-right: 15vh;
+    padding-left: 15vh;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+.foot input{
+    margin-top: 5px;
+    padding: 5px;
+}
+.foot button{
+    background-color:rgb(184, 184, 177) ;
+    border: none;
+    border-radius: 2px;
+    padding: 7px;
+}
+.foota{
+    color: beige;
+    text-decoration: none;
+    list-style: none;
+}
+.foota:hover{
+    color: rgb(67, 67, 150);
+}
+ul{
+    padding: 10px;    
+}
+.end{
+   display: flex;
+}
+#end{
+    padding: 4vh;
+}

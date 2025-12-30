@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header>
+    <h1>SAM</h1>
+    <nav>
+      <a href="index.html" class="nav" target="_blank">HOME</a>
+      <a href="men.html" class="nav" target="_blank">MEN</a>
+      <a href="women.html" class="nav" target="_blank">WOMEN</a>
+      <a href="contact.html" class="nav">CONTACT</a>
+      <a href="help.html" class="nav" target="_blank">HELP</a>
+    </nav>
+  </header>
+   <div class="head">
+<h1>Contact us</h1>
+<p>Questions about gear? Returns? Collaborations? We're here.</p>
+</div>
+  <section>
+    <div class="left">
+    <h2>Headquarters</h2>
+    <p>SAM Inc.</p>
+    <p>100 BLVD, Suite 500</p>
+    <p>Los Angeles, CA 90012</p>
+    <h2>Direct Contact</h2>
+    <p>📧support@SAM.com</p>
+    <p>📞 +1 (021) 234-4354</p>
+    <h2>Hours</h2>
+    <p>Mon - Fri: 9am - 6pm PST</p>
+    <p>Sat: 10am - 4pm PST</p>
+    </div>
+    <main>   
+    <form id="login"> 
+
+    <div class="flex">  
+    <div class="inp">
+    <label for="name">First Name</label>
+    <input type="name" placeholder="eg.John" id="fname" required>
+    <span class="error" id="nameerror"></span>
+    </div>
+    <div class="inp">
+    <label for="name">Last Name</label>
+    <input type="name" placeholder="eg.Doe" id="lname" required>
+    <span class="error" id="nameerror"></span>
+    </div>
+    </div>
+    <div class="inp">
+    <label for="email">E-mail Address</label>
+    <input type="email" placeholder="eg.henry@gmail.com" id="email" required>
+    <span class="error" id="emailerror"></span>
+    </div>
+    <div class="flex">
+      <div class="inp">
+    <label for="number">Order Number(OPTIONAL)</label>
+    <input type="text" placeholder="#GL-3456" id="onum">
+    </div>
+    <div class="inp"> 
+   <label for="topic">Topic</label>
+  <select id="topic" name="topic">
+  <option>General Inquiry</option>
+  <option>Product defect</option>
+  <option>Return/Exchange</option>
+  <option>Wholesale/Collab</option>
+ </select>
+ </div>
+ </div>
+ <div class="inp">
+  <label for="message">Message</label>
+  <textarea id="message" placeholder="How can we help you?" required></textarea>
+  <span class="error" id="messageerror" ></span>
+ </div>
+
+    <div class="inp">
+        <button type="submit" id="btn">Send message</button>
+    </div>
+    </form>  
+    </main>
+    </section>
+
+    
+    <footer>
+      <div class="end">
+  <div class="foot">
+    <h2>SAM</h2>
+    <p>Premium clothes in accordance with new fashion</p>
+    </div>
+    <div class="foot">
+    <h2>Customer Care</h2>
+   
+    <ul><a class="foota" href="main.html">Order Tracking</a></ul>
+    <ul><a class="foota" href="main.html">Shipping & Returns</a></ul>
+    <ul><a class="foota" href="main.html">FAQ</a></ul>
+  
+  </div>
+  <div class="foot">
+    <h2>Connect</h2>
+    
+    <ul><a class="foota" href="instagram.com">Instagram</a></ul>
+    <ul><a class="foota" href="#">facebook</a></ul>
+    <ul><a class="foota" href="#">Tik Tok</a></ul>
+  </div>
+  </div>
+  <hr>
+  <p id="end">© 2025 SAM Inc. All rights reserved.</p>
+</footer>
+
+
+    <script>
+const form = document.getElementById('login');
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  document.getElementById('nameerror').innerText = '';
+  document.getElementById('emailerror').innerText = '';
+  document.getElementById('messageerror').innerText = '';
+  const fname = document.getElementById('fname').value.trim();
+  const lname = document.getElementById('lname').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+  let valid = true;
+  if (fname === '' || lname === '') {
+    document.getElementById('nameerror').innerText = 'Please enter your full name';
+    valid = false;
+  }
+  if (lname === '') {
+    document.getElementById('nameerror').innerText = 'Please enter your full name';
+    valid = false;
+  }
+  if (email === '') {
+    document.getElementById('emailerror').innerText = 'Please enter a valid email';
+    valid = false;
+  }
+  if (message === '') {
+    document.getElementById('messageerror').innerText = 'Message cannot be empty';
+    valid = false;
+  }
+  if (valid) {
+    alert('Form submitted successfully!');
+    form.reset(); 
+  }
+});
+</script>
+
+</body>
+</html>

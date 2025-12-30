@@ -1,0 +1,222 @@
+*{    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+background-color: #e9edf1;
+}
+h1{
+    font-family: "Roboto", sans-serif;
+}
+header{
+ background-color: rgb(119, 124, 129);
+ display: flex;
+ padding: 20px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ color: beige;
+ z-index: 1000;
+}
+header h1{
+    font-size: 50px;
+    font-family: 'inter', sans-serif;
+}
+nav{
+    margin-left: 110vh;
+    margin-top: 20px;
+}
+.nav{
+   padding: 5px;
+   text-decoration: none;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600; 
+   font-size: 16px;
+   color: beige;
+}
+.nav:hover{
+    color: rgb(0, 0, 0);
+}
+.cart{
+  font-weight: bold;
+  cursor: pointer;
+  background: beige;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-left: 3vh;
+  padding-top: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+.cart a{
+    text-decoration: none;
+    color: rgb(90, 87, 87);
+}
+.cart a:hover{
+   color: rgb(0, 0, 0); 
+}
+.cart a:active {
+  color: #45a049; 
+}
+.img-box {
+  position: relative;
+  margin-top: 15vh;
+  font-family: 'Montserrat', sans-serif;
+}
+.img-box img {
+  width: 1365px;
+  height: 550px;
+  width: 100%;
+}
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+}
+#btn{
+    margin-top: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: large;
+    border-radius: 25px;
+    margin-bottom: 80px;
+    background-color: white;
+    color: rgb(46, 45, 45);
+    border: black solid 2px;
+    cursor: pointer;
+    
+}
+#btn:hover{
+   color: white;
+   font-family: "Roboto", sans-serif;
+   background-color: rgb(71, 65, 65); 
+}
+.head{
+    padding: 10px;
+    border-left: rgb(66, 65, 65) solid 5px;
+    color: rgb(66, 65, 65);
+    margin-left: 25px;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.head h1{
+    font-size: 40px;
+}
+.head p{
+    font-size: 20px;
+}
+main{
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px; 
+    scroll-behavior: smooth;
+}
+main::-webkit-scrollbar {
+    height: 10px; 
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+.item{
+    flex: 0 0 auto;
+    margin: 5vh;
+    border-radius: 20px;
+    border: rgb(197, 195, 195) solid 2px;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(133, 130, 130);
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.item img{
+  width: 247px;
+  height: 240px;
+  border-top-right-radius: 19px;
+  border-top-left-radius: 19px;
+  transition: transform 0.5s ease;
+}
+.item h3{
+ text-align: center;
+ padding: 8px;
+}
+.item h2{
+ text-align: center;
+ padding: 8px;
+}
+.item button{
+    padding: 13px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 3vh;
+    margin-left: 9vh;
+    border-radius: 25px;
+    background-color: white;
+    border: black solid 1px;
+    cursor: pointer;
+}
+.item button:hover{
+    color: white;
+    background-color: rgb(71, 65, 65); 
+}
+.item button:active {
+  background-color: #45a049; 
+}
+.item:hover{
+  box-shadow: 0 0 15px rgb(133, 130, 130);
+  transform: scale(1.05);  
+}
+.item:hover img {
+    transform: scale(1.1); 
+}
+footer{
+    background-color: rgb(29, 27, 27);
+    margin-top: 10px;
+    color: beige;
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;
+}
+.foot{
+    padding-right: 15vh;
+    padding-left: 15vh;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+.foot input{
+    margin-top: 5px;
+    padding: 5px;
+}
+.foot button{
+    background-color:rgb(184, 184, 177) ;
+    border: none;
+    border-radius: 2px;
+    padding: 7px;
+}
+.foota{
+    color: beige;
+    text-decoration: none;
+    list-style: none;
+}
+.foota:hover{
+    color: rgb(67, 67, 150);
+}
+ul{
+    padding: 10px;    
+}
+.end{
+   display: flex;
+}
+#end{
+    padding: 4vh;
+}
+
