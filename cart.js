@@ -14,10 +14,16 @@ function addToCart(name, price) {
 }
 
 function updateCartCount() {
-  const count =cart.reduce((sum, item) => sum + item.quantity, 0);
-  const counter= document.getElementById("cart-count");
+  let count = 0;
+
+  for (let i = 0; i < cart.length; i++) {
+    count += cart[i].quantity;
+  }
+  
+  const counter = document.getElementById("cart-count");
   if (counter) counter.innerText = count;
 }
+
 
 updateCartCount();
 function displayCart() {
