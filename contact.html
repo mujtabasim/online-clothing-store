@@ -41,12 +41,12 @@
     <div class="inp">
     <label for="name">First Name</label>
     <input type="text" placeholder="eg.John" id="fname" required>
-    <span class="error" id="nameerror"></span>
+    <span class="error" id="fnameerror"></span>
     </div>
     <div class="inp">
     <label for="name">Last Name</label>
     <input type="text" placeholder="eg.Doe" id="lname" required>
-    <span class="error" id="nameerror"></span>
+    <span class="error" id="lnameerror"></span>
     </div>
     </div>
     <div class="inp">
@@ -114,7 +114,8 @@
 const form = document.getElementById('login');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
-  document.getElementById('nameerror').innerText = '';
+  document.getElementById('fnameerror').innerText = '';
+  document.getElementById('lnameerror').innerText = '';
   document.getElementById('emailerror').innerText = '';
   document.getElementById('messageerror').innerText = '';
   const fname = document.getElementById('fname').value.trim();
@@ -122,10 +123,14 @@ form.addEventListener('submit', function (e) {
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
   let valid = true;
-  if (fname === '' || lname === '') {
-    document.getElementById('nameerror').innerText = 'Please enter your full name';
-    valid = false;
-  }
+ if (fname === '') {
+  document.getElementById('fnameerror').innerText = 'Please enter your first name';
+  valid = false;
+}
+if (lname === '') {
+  document.getElementById('lnameerror').innerText = 'Please enter your last name';
+  valid = false;
+}
   if (lname === '') {
     document.getElementById('nameerror').innerText = 'Please enter your full name';
     valid = false;
